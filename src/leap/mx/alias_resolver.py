@@ -111,7 +111,7 @@ class StatusCodes(object):
                   '553': DENY,
                   '554': FAIL, }
 
-    SMTPStrings = { 'OK' 200,
+    SMTPStrings = { 'OK': 200,
                     'RETRY': 400,
                     'BAD': 500,
                     'NOKEY': 550,
@@ -128,7 +128,7 @@ class StatusCodes(object):
         if status_code:
             self.get(status_code)
 
-    def get(self, status_code=None)
+    def get(self, status_code=None):
         """Takes an SMTP-like status code and returns an SMTP-like message.
 
         :type status_code: str or int
